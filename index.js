@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const moment = require("moment-timezone");
 
 //DB Connection
 const mongoose = require("mongoose");
@@ -27,5 +28,6 @@ const userRouter = require("./routes/userRoute");
 app.use(userRouter);
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server Running on Port ${process.env.PORT}`)
-});
+    const jakartaTime = moment.tz(Date.now(), "Asia/Jakarta").format("dddd YYYY-MM-DD HH:mm:ss");
+    console.log(`Server Running on Port ${process.env.PORT} at ${jakartaTime} WIB`);
+  });
