@@ -1,0 +1,26 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore package-lock.json file
+package-lock.json
+
+# Ignore .env file (contains sensitive information)
+.env
+
+# Ignore generated report folder
+report/
+
+# Ignore any generated build artifacts or binaries
+# Add other build-related files as needed
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore any local configuration files
+# Add other local configuration files as needed
+config.json
