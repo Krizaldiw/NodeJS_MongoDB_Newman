@@ -4,7 +4,7 @@
   "description": "Restful API",
   "main": "index.js",
   "scripts": {
-    "test": "newman test.js",
+    "test": "node test.js",
     "start": "nodemon index"
   },
   "author": "",
